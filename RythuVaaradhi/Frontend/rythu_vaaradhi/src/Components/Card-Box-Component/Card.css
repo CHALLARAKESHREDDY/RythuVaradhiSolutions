@@ -1,0 +1,129 @@
+.Card{
+    width:auto;
+    text-align: left;
+    height:auto;
+    background-color: #ffff;
+    border-radius: 5px;
+    margin:7px;
+    padding:30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.Icon-Container{
+    color: #ffffff;
+    background-color: #2E8B57;
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    font-size: 24px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+}
+
+.Icon{
+    
+        font-size: 50px;
+        color:#ffffff;
+      
+}
+
+.Card-Title{
+    font-size:28px;
+    color:#2E8B57;
+    margin:13px 0px;
+}
+
+.Card-Para{
+    font-size: 17px;
+    font-weight: normal;
+    width:93%;
+}
+
+
+@media (max-width:1024px){
+
+    .Card{
+        
+        text-align: left;
+        
+        background-color: #ffff;
+        border-radius: 5px;
+        margin:5px;
+        padding-top:30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
+    }
+
+    .Card-Para{
+        font-size: 15px;
+        width:95%;
+    }
+
+    .Card-Title{
+        font-size: 16px;
+    }
+
+    .Icon{
+        font-size: 40px;
+    }
+
+    .Icon-Container{
+        height:80px;
+        width:80px;
+    }
+
+}
+
+
+@media (max-width:920px){
+
+    .Card{
+        width:320px;
+        margin: 15px;
+        
+    }
+
+    
+
+}
+
+@media (max-width:600px){
+
+    .Card{
+        width:auto;
+        padding-top: 10px;
+
+        
+    }
+
+    .Card-Para{
+        font-size: 13px;
+        width:95%;
+    }
+
+    .Card-Title{
+        font-size: 15px;
+    }
+
+    .Icon{
+        font-size: 35px;
+    }
+
+    .Icon-Container{
+        height:70px;
+        width:70px;
+    }
+
+    
+}

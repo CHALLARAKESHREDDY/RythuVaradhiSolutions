@@ -1,21 +1,46 @@
-import "./Navbar.css"
+import { useState } from 'react'
+import { IoMenu } from "react-icons/io5";
+import { NavLink } from 'react-router-dom'
 
-function Navbar(){
-  return(
-    <header className="header">
-    <h1 style={{fontSize:"35px"}}>RythuVaaradhi</h1>
-    <nav className="Navbar">
-        <ul className="Nav-List">
-            <li><a href="#home" style={{textDecoration:"none"}}>Home</a></li>
-            
-            <li><a href="#about" style={{textDecoration:"none"}}>About</a></li>
-            <li><a href="#services" style={{textDecoration:"none"}}>Services</a></li>
-            <li><a href="#contact" style={{textDecoration:"none"}}>Careers</a></li>
+import './Navbar.css'
 
-            <li><a href="#contact" style={{textDecoration:"none"}}>Contact</a></li>
-        </ul>
+const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(false)
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar)
+  }
+
+  return (
+    <nav className="navbar">
+      <div className="container">
+        <div className="logo">
+          <h1>RythuVaaradhi</h1>
+        </div>
+        <div className="menu-icon" onClick={handleShowNavbar}>
+        <IoMenu className="IoMenu" />
+        </div>
+        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+          <ul>
+            <li>
+              <NavLink to="/home">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/services">Services</NavLink>
+            </li>
+            <li>
+              <NavLink to="/careers">Careers</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-</header>
   )
 }
 

@@ -6,7 +6,7 @@ const ScrollRevealSection = ({ id, backgroundColor, children, url,height}) => {
 
   useEffect(() => {
     const section = document.getElementById(id);
-    const halfwayPoint = section.offsetTop - window.innerHeight / 1.5;
+    const halfwayPoint = section.offsetTop - window.innerHeight / 2;
 
     const handleScroll = () => {
       if (window.pageYOffset >= halfwayPoint && !visible) {
@@ -33,10 +33,12 @@ const ScrollRevealSection = ({ id, backgroundColor, children, url,height}) => {
         backgroundColor,
         textAlign: 'center',
         opacity: visible ? 1 : 0,
-        transition: 'opacity 0.5s',
+        transition: 'opacity 1s',
         backgroundImage: `url(${url})`,
         backgroundSize: 'cover', // Adjust to your needs
         backgroundPosition: 'center', // Adjust to your needs
+        display:"flex",
+        flexDirection:"column"
       }}
     >
       {children}

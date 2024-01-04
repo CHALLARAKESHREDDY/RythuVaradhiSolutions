@@ -35,15 +35,15 @@ background-image: url("https://i.postimg.cc/wxhwH7gz/dji-5331597.jpg");
     background-size: cover;
     margin:0px;
     padding:0px;
-  background-color: aqua;
+
   }
 
   .Home-Title{
-    height:120%;
+    height:67vh;
     width:100%;
     display: flex;
     justify-content: center;
-    align-items: center;text-align: center;
+    align-items: flex-end;
     
   }
 
@@ -61,16 +61,20 @@ background-image: url("https://i.postimg.cc/wxhwH7gz/dji-5331597.jpg");
   .Main-Cards-Container{
     background: linear-gradient(to top, #2E8B57
     , #ffffff);
-    height:100vh;
+    height:auto;
    display: flex;
    flex-direction: column;
+   align-items: center;
    justify-content: center;
+   height:100vh;
+  
     
   }
 
   .Cards-Container{
     display: flex;
     justify-content:center;
+    height:auto;
     /* Set the background of the element to a linear gradient */
 
   }
@@ -90,14 +94,11 @@ background-image: url("https://i.postimg.cc/wxhwH7gz/dji-5331597.jpg");
 
   .Card-Icons{
     
-    color: #ffffff !important;
+    color: #ffffff;
     background-color: #2E8B57;
     height:100px;
     width:100px;
     border-radius: 50%;
-
-    padding: '10px' ;
-    color: '#ffffff';
     font-size: 24px;
     display:flex;
     justify-content: center;
@@ -111,43 +112,64 @@ background-image: url("https://i.postimg.cc/wxhwH7gz/dji-5331597.jpg");
   }
 
   .Vision-Image{
-    background-image: url("https://i.postimg.cc/fLCk6VNd/visionn.jpg");
-    height:130vh;
-    width:100%;
-    background-size: cover;
+    background-image: url("https://i.postimg.cc/ryxXJpfQ/soil-testing.webp");
+    height:100vh;
+    width:100% !important;
     display: flex;
-    justify-content: Left;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding:0px;
+    margin-bottom:20px;
+    
   }
 
+  
+
+
   .Our-Vision-Container{
-    margin-top:100px;
-    margin-left:100px;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      align-self: center;
+        padding:30px;
+        text-align: center;
   
   }
 
   .Our-Vision{
     color:#DF6520;
-    font-size: 40px;
+    font-size: 50px;
   
   }
 
   .Our-Vision-Para{
-    width:400px;
     font-weight: 500px;
-    font-size: 25px;
+    font-size: 35px;
     color:#ffffff;
+    align-self: flex-start;
   }
 
   
   .Mission-Image{
     background-image: url("https://i.postimg.cc/BQ3Xhkwr/smart-agriculture-2.jpg");
-    height:130vh;
-    width:100%;
-    background-size: cover;
+    height:100vh;
+    width:100% !important;
     display: flex;
-    justify-content: Right;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding:0px;
+    margin-top:30px;
+    
   }
   
 
@@ -157,6 +179,334 @@ background-image: url("https://i.postimg.cc/wxhwH7gz/dji-5331597.jpg");
   
   }
 
+  .EcoSystem-Image{
+    width: 850px;
+    height: 850px;
+    align-self: center;
+  }
 
+  .Testinomial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+  }
+
+  /* YourStyles.css */
+
+
+
+.slide-container {
+  text-align: center;
+  padding: 20px;
+  width:70% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Review-Para{
+  font-size: 18px;
+  font-family:"Roboto";
+  line-height: 2;
+  width:400px;
+  
+
+}
+
+.Home-Quote{
+  font-size: 38px;
+  color: #ffffff;
+}
+
+.Home-Quote2{
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.Key-Offerings{
+  font-size: 35px;
+  padding:25px;
+}
+
+.Vision-mission-Heading-Container{
+  height:30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Vision-Mission-Heading{
+   font-size: 50px;
+   font-weight: bold;
+   color:#2E8B57;
+}
+
+.Ecosystem-head{
+  font-size: 50px;
+  color:#2E8B57;
+  padding-top:30px;
+  
+}
+
+.Hardships{
+  font-size: 40px;
+  font-weight: bold;
+  color:#2E8B57;
+  padding:30px;
+}
+
+.Hardship-Video{
+  width:820px;
+  height:520px; 
+  margin-bottom:15px;
+}
+
+.GroundReport-Head{
+  font-size: 40px;
+  font-weight:bold ;
+  color: #2E8B57;
+}
+
+@media (max-width:1280px){
+  .Cards-Container{
+    display: flex;
+    justify-content:center;
+    width:100%;
+    height:auto;
+}
+
+.Vision-Mission-Heading{
+  font-size: 45px;
+}
+.Vision-Image{
+  height:auto;
+  margin-bottom:30px;
+}
+
+.Our-Vision-Container{
+  width:50%;
+}
+
+.Mission-Image{
+  height:auto;
+  margin-top:25px;
+}
+
+.Ecosystem-head{
+  font-size: 45px;
+  color:#2E8B57;
+  padding-top:25px;
+}
+
+.EcoSystem-Image{
+  width: 800px;
+  height: 800px;
+  align-self: center;
+}
+
+.Hardships{
+  font-size: 37px;
+  font-weight: bold;
+  color:#2E8B57;
+  padding:25px;
+}
+.Hardship-Video{
+  width:720px;
+  height:520px; 
+  margin-bottom:15px;
+}
+
+.GroundReport-Head{
+  font-size: 37px;
+  font-weight:bold ;
+  color: #2E8B57;
+}
+
+}
+
+
+
+@media (max-width:920px){
+  .Home-Quote{
+    font-size: 33px;
+  }
+
+  .Home-Quote2{
+    font-size: 22px;
+  }
+
+  .Key-Offerings{
+    font-size: 30px;
+    padding:20px;
+  }
+
+  .Cards-Container{
+    flex-wrap: wrap;
+    height:auto;
+  }
+
+  .Vision-Mission-Heading{
+    font-size: 40px;
+  }
+
+  .Vision-Image{
+    height:auto;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-bottom:20px;
+    padding:0px;
+  }
+
+  .Mission-Image{
+    height:auto;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top:20px;
+    padding:0px;
+  }
+
+  .Our-Vision-Container{
+  
+      width:65%;
+    
+    
+  }
+
+  .Our-Vision{
+    font-size: 40px;
+  }
+
+  .Ecosystem-head{
+    font-size: 40px;
+    color:#2E8B57;
+    padding-top:20px;
+  }
+
+  .EcoSystem-Image{
+    width:600px;
+    height:600px;
+  }
+
+  .Hardships{
+    font-size: 30px;
+    font-weight: bold;
+    color:#2E8B57;
+    padding:20px;
+  }
+
+  .Hardship-Video{
+    width:620px;
+    height:420px; 
+    margin-bottom:15px;
+  }
+
+  .GroundReport-Head{
+    font-size: 30px;
+    font-weight:bold ;
+    color: #2E8B57;
+  }
+  
+}
+
+
+@media (max-width:600px){
+  .Home-Quote{
+    font-size: 22px;
+
+  }
+  .Home-Quote2{
+    font-size: 16px;
+  }
+  .Key-Offerings{
+    font-size: 22px;
+    padding:15px;
+  }
+
+  .Cards-Container{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: 1;
+    flex-grow: 1;
+    height:auto;
+    padding:30px;
+  }
+
+  .Main-Cards-Container{
+    height:auto;
+  }
+
+  .Vision-Mission-Heading{
+    font-size: 32px;
+  }
+
+  .Our-Vision{
+  
+    font-size: 30px;
+  
+  }
+
+  .Our-Vision-Para{
+   
+    font-size: 15px;
+   
+  }
+
+  .Our-Vision-Container{
+    width:85%;
+  
+  }
+  .Vision-Image{
+     width:100%;
+     padding:0px;
+     margin-bottom:10px ;
+    height:auto;
+  }
+
+  .Mission-Image{
+    width:100%;
+    padding:0px;
+    margin-top:10px;
+   height:auto;
+  }
+
+  .Ecosystem-head{
+    font-size: 25px;
+    color:#2E8B57;
+    padding-top:15px;
+  }
+
+  .EcoSystem-Image{
+    width:300px;
+    height:300px;
+  }
+
+  .Hardships{
+    font-size: 25px;
+    font-weight: bold;
+    color:#2E8B57;
+    padding:15px;
+  }
+
+  .Hardship-Video{
+    width:65%;
+    height:50%; 
+    margin-bottom:15px;
+  }
+
+  .GroundReport-Head{
+    font-size: 24px;
+    font-weight:bold ;
+    color: #2E8B57;
+  }
+
+}
 
 

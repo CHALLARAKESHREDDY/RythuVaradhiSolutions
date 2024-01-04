@@ -1,0 +1,25 @@
+.AddressComponent{
+    background-image: url("https://i.postimg.cc/90nwKJ2N/blur-background.jpg");
+    height:50vh;
+    width:100%;
+    background-size: cover;
+    opacity: 1 ;
+        transition:  0.5s;
+        background-size: cover;
+        background-position: center;
+
+}
+
+@media (max-width:600px){
+    #QuickLinks{
+        display: none;
+    }
+
+    .Address-Card{
+        margin-left:30px;
+    }
+
+    .Bottom-Rythu{
+        font-size: 15px;
+    }
+}

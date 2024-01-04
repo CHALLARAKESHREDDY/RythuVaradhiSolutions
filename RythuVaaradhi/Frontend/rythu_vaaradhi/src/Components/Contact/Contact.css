@@ -1,0 +1,229 @@
+.Contact-Container{
+    height:80vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact-Head{
+    font-size: 40px;
+    color:#ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.Contact-Icons-Container{
+    height:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.Contact-Icons{
+    font-size:30px;
+    margin-right:10px;
+    color:#2E8B57;
+  
+  }
+  .Form-Container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Find-Us-Head{
+    color:#2E8B57;
+    font-size: 35px;
+
+    padding:0px 30px;
+  }
+
+  .Find-Us{
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35%;
+    height:90%;
+  }
+  
+  .name-container {
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    align-self: center;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    border:2px solid;
+
+    text-align: center;
+    align-self: center;
+
+  }
+  
+  label {
+    margin-bottom: 3px;
+    margin-left:10px;
+    font-size: 19px;
+    align-self: flex-start;
+    color: #646060;
+    font-weight: 500;
+    
+  }
+
+  .Label-Container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+  }
+  
+  input,
+  textarea {
+    width:100%;
+    flex-grow: 1;
+    padding: 15px;
+    margin-bottom:15px;
+    border:3px solid #CECBCB;
+    border-radius:7px;
+    outline:none;
+    font-size: 18px;
+    
+
+  }
+
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .Form-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:100%;
+  }
+
+
+  .contact-info-containe{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    border:2px solid;
+
+    text-align: center !important;
+    align-self: center !important;
+
+  }
+
+
+  .Submit-Button{  
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    width:100%;
+    border-radius: 10px;
+  font-size: 20px;
+
+  }
+
+  .Any-Questions{
+    font-size: 20px;
+  }
+  
+
+  @media (max-width:920px){
+    .contact-form{
+      width:80%;
+    }
+  }
+
+
+  @media (max-width:600px){
+
+    .Find-Us-Head{
+      font-size: 30px;
+    }
+    .Find-Us{
+      font-size: 20px;
+    }
+    .Contact-Icons{
+      font-size: 25px;
+    }
+
+    .Find-Us-Head{
+      width:80%;
+    }
+
+    .Contact-Icons-Container{
+      width:80%;
+    }
+    .Contact-Icons{
+      margin: 0px;
+      margin-right:10px
+    }
+    .para-contact{
+      margin:0px;
+      padding:0px;
+      width:100px;
+    }
+
+    .Address-Icons2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Find-Us-Head{
+      font-size: 25px;
+      align-self: center;
+    }
+
+    .Any-Questions{
+      font-size: 17px;
+    }
+    .SendUs{
+      font-size: 20px;
+    }
+    .contact-form{
+      width:87%;
+    }
+input,textarea{
+    width:100%;
+    flex-grow: 1;
+    padding: 13px;
+    margin-bottom:15px;
+    border:2px solid #CECBCB;
+    border-radius:7px;
+    outline:none;
+    font-size: 15px;
+  
+    
+  }
+
+
+
+
+  }
+  

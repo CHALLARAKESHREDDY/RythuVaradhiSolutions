@@ -1,0 +1,197 @@
+.About-Image{
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff;
+  
+    
+}
+
+*{
+    font-family: Roboto;
+}
+
+
+.About2-Container{
+    Padding:50px;
+}
+
+.Overview-para{
+    font-size: 22px;
+    font-family:"Roboto";
+    line-height: 2;
+    width:500px
+    
+}
+
+.Company-Overview{
+    width:500px;
+    height:500px;
+    border-radius: 50%;
+    object-fit: cover;
+      z-index: 2;
+      border:10px solid #2E8B57;
+}
+
+.Company-Overview-Container{
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+     margin-bottom:40px;
+     width:85%;
+     align-self: center;
+    
+}
+
+.Company-Overview-Para{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    
+}
+
+.About-Cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+
+.Home-Bottom-Page{
+    display: flex;
+    justify-content: space-around;
+    color:#ffffff;
+    align-items: center;
+    height:100%;
+  }
+  
+  .QuickLinks{
+    height:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left:100px;
+    
+  }
+  
+  .Address-Card{
+    height:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right:100px
+    
+  }
+  
+  .Address-Icons{
+    display: flex;
+  
+    align-items: center;
+  
+  }
+  
+  
+  .Bottom-Icons{
+    font-size:30px;
+    margin-right:10px
+  
+  }
+  
+  
+  .Bottom-Socialmedia{
+    background-color: #2E8B57;
+    height:10vh;
+    width:100%;
+    color:#ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .Social-Icons{
+    display: flex;
+    justify-content: space-around;
+    width:200px;
+  }
+  
+  .Company-Overview-Head{
+    font-size: 40px;
+  }
+
+
+  @media (max-width:920px){
+    .Company-Overview-Head{
+      font-size: 30px;
+    }
+
+    .Company-Overview-Container{
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0px;
+      width:auto;
+      height:auto;
+    }
+
+    .Company-Overview{
+      width:400px;
+      height:400px;
+    }
+
+    .Overview-para{
+      font-size: 21px;
+    
+    }
+
+    .Company-Overview-Para{
+      margin: 0px;
+      width:100%;
+      height:auto;
+      padding:15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   
+    }
+
+  }
+
+  @media (max-width:600px){
+    .Company-Overview-Head{
+      font-size: 25px;
+    }
+
+    .Company-Overview-Container{
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0px;
+      width:100%;
+      height:auto;
+    }
+
+    .Company-Overview{
+      width:300px;
+      height:300px;
+    }
+
+    .Overview-para{
+      font-size: 17px;
+    
+    }
+
+    .Company-Overview-Para{
+      margin: 0px;
+      width:100%;
+      height:auto;
+      padding:15px;
+      
+   
+    }
+
+  }
+
+
