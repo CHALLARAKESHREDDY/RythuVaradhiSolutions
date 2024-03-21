@@ -1,5 +1,5 @@
 .AddressComponent{
-    background-image: url("https://i.postimg.cc/90nwKJ2N/blur-background.jpg");
+    background-image: url("https://i.postimg.cc/PrkrVSdB/IMG-20240321-124927.jpg");
     height:50vh;
     width:100%;
     background-size: cover;
@@ -7,8 +7,10 @@
         transition:  0.5s;
         background-size: cover;
         background-position: center;
+        margin-top:10px
 
 }
+
 
 @media (max-width:600px){
     #QuickLinks{

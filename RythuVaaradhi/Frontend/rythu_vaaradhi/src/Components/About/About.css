@@ -14,7 +14,7 @@
 
 
 .About2-Container{
-    Padding:50px;
+    Padding:35px;
 }
 
 .Overview-para{
@@ -122,6 +122,11 @@
   }
 
 
+  .CoreValues{
+    padding:30px;
+  }
+
+
   @media (max-width:920px){
     .Company-Overview-Head{
       font-size: 30px;
@@ -190,6 +195,10 @@
       padding:15px;
       
    
+    }
+    .CoreValues{
+      padding:0px;
+      padding-top:20px;
     }
 
   }

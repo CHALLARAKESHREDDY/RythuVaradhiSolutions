@@ -8,10 +8,16 @@ import Services from './Components/Services/Services';
 import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFound/NotFound';
 import Careers from './Components/Careers/Careers';
+import MyContext from './Components/Context/Context';
+import { useState } from 'react';
 
 
 function App() {
+
+  const [language,changeLanguage]=useState(localStorage.getItem("language"))
+
   return (
+    <MyContext.Provider value={{language,changeLanguage}}>
     <BrowserRouter>
   
       <Switch>
@@ -23,6 +29,7 @@ function App() {
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
+    </MyContext.Provider>
   );
 }
 

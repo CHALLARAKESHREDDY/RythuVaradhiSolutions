@@ -13,7 +13,7 @@ import AddressComponent from "../AddressComponent/AddressComponent";
 
 let para1="Rythu Vaaradhi Solutions is committed to staying at the forefront of technological advancements in agriculture. By constantly seeking and implementing innovative solutions, the company aims to enhance farming practices, optimize resource usage, and contribute to the overall modernization of the agricultural sector."
 let para2="Recognizing the strength in unity, Rythu Vaaradhi Solutions promotes collaboration among farmers. By creating a community-driven platform, the startup facilitates the sharing of resources, knowledge, and experiences. This collaborative approach not only improves individual farm operations but also strengthens the agricultural community as a whole."
-let para3="At the heart of Rythu Vaaradhi Solutions is the commitment to empower farmers. Through access to skilled labor, modern machinery, and advanced agricultural practices like precision farming, the startup aims to uplift farmers, enhance their capabilities, and contribute to their economic well-being."
+let para3="At the heart of Rythu Vaaradhi is the commitment to empower and educate farmers. Through access to skilled labor, modern machinery, and advanced agricultural practices like precision farming, the startup aims to uplift farmers, enhance their capabilities, and contribute to their economic well-being through sustainable practices."
 let para4="Rythu Vaaradhi Solutions recognizes its role in the broader community. The startup is dedicated to making a positive impact by supporting local farmers, creating job opportunities, and contributing to economic growth. By prioritizing community welfare, the company aims to be a catalyst for positive change in the regions it operates."
 
 function About(){
@@ -21,7 +21,7 @@ function About(){
     
     return(
         <>
-        <ScrollRevealSection id={"about1"} url={"https://i.postimg.cc/HnQdttBd/1657958812-About-Us-main-0.jpg"} height={"105vh"} >
+        <ScrollRevealSection id={"about1"} url={"https://i.postimg.cc/59FzShj1/DSC-0982-01.jpg"} height={"105vh"} >
         <Navbar />
             <div className='About-Image'>
                 <h1 style={{fontSize:"50px",fontFamily:"Roboto",boxShadow:"0 4px 8px rgba(0, 0, 0, 0.5)"}} className="AboutUs-Head">About Us</h1>
@@ -36,11 +36,11 @@ function About(){
         </ScrollRevealSection>
         <ScrollRevealSection id={"about3"} height={"auto"} backgroundColor={"#E9F9EE"}>
             <div>
-        <h1 style={{fontSize:"37px",padding:"15px"}}>Core Values</h1>
+        <h1 style={{fontSize:"28px"}} className="CoreValues">Core Values</h1>
 
        <div className="Cards-Container">
         
-       <Card para={para1} icon={FcIdea} title={"Innovation"}/>
+       <Card para={para1} icon={FcIdea} title={"Innovation"} className="para1"/>
             <Card para={para2} icon={FcCollaboration} title={"Collaboration"}/>
             <Card para={para3} icon={GiWaterRecycling} title={"Sustainability"}/>
             <Card para={para4} icon={LiaFistRaisedSolid} title={"Community Impact"} />

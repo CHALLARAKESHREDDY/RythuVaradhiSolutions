@@ -1,21 +1,35 @@
-import { useState } from 'react'
+import { useState,useContext} from 'react'
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from 'react-router-dom'
-
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import './Navbar.css'
+import MyContext from '../Context/Context';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
+  const {language, changeLanguage}=useContext(MyContext)
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar)
   }
 
+  const changeContext=(event)=>{
+    if (event.target.value==="English"){
+      localStorage.setItem("language",event.target.value)
+    }else{
+      localStorage.setItem("language",event.target.value)
+    }
+    changeLanguage(event.target.value)
+
+  }
+
+
+
   return (
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-          <h1>RythuVaaradhi</h1>
+          <h1 style={{color:"#145A32"}}>RythuVaaradhi</h1>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
         <IoMenu className="IoMenu" />
@@ -23,7 +37,7 @@ const Navbar = () => {
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" exact>Home</NavLink>
             </li>
             <li>
               <NavLink to="/about">About</NavLink>
@@ -36,6 +50,12 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink to="/contact">Contact</NavLink>
+            </li>
+            <li>
+              <select value={language} onChange={changeContext}>
+                <option value="Telugu">Telugu</option>
+                <option value="English">English</option>
+              </select>
             </li>
           </ul>
         </div>

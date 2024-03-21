@@ -39,12 +39,12 @@ background-image: url("https://i.postimg.cc/wxhwH7gz/dji-5331597.jpg");
   }
 
   .Home-Title{
-    height:67vh;
+    height:70vh;
     width:100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    
+  
   }
 
   .Home-Page2{
@@ -509,4 +509,45 @@ background-image: url("https://i.postimg.cc/wxhwH7gz/dji-5331597.jpg");
 
 }
 
+.image-courousel{
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
 
+}
+
+.Carousel{
+  height:auto;
+align-self: center;
+width:90%;
+height:auto;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin:10px;
+
+}
+
+.Carousel-Sub{
+height:260px;;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Carousel-Sub-para{
+  align-self: flex-start;
+}
+
+
+.Carousel .thumb {
+  margin: 0 20px; /* Adjust this value to increase/decrease space between dots */
+}

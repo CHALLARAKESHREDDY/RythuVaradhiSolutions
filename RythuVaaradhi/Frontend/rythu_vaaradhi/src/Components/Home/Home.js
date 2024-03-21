@@ -5,14 +5,10 @@ import { TbRobot } from "react-icons/tb";
 import { TiShoppingCart } from "react-icons/ti";
 import { TfiSignal } from "react-icons/tfi";
 import { FaHandshake } from "react-icons/fa6";
-import { MdOutlineMail } from "react-icons/md";
-import { IoCall } from "react-icons/io5";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa6";
+import React, { Component, useEffect } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 
 import './Home.css'
 import ScrollRevealSection from '../ScrollRevealSection/ScrollRevealSection';
@@ -32,6 +28,10 @@ let para4="Tech Innovations is your comprehensive source for all things agricult
 
 function Home() {
 
+  useEffect(() => {
+    document.title = "RythuVaaradhi"; // Set the new tab title
+  }, []);
+
   const settings = {
     dots: true,
   
@@ -39,14 +39,10 @@ function Home() {
     speed: 2500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: true,
     autoplay: true,
     autoplaySpeed: 5000,
     centerMode: true,
-    infinite: true,
     centerPadding: '60px',
-    slidesToShow: 1,
-    speed: 500,
     focusOnSelect: true,
   };
 
@@ -82,7 +78,7 @@ function Home() {
   return (
     <>
       
-      <ScrollRevealSection id={"Section-Page1"} url={"https://i.postimg.cc/wxhwH7gz/dji-5331597.jpg"} height={"100vh"}>
+      <ScrollRevealSection id={"Section-Page1"} url={"https://i.postimg.cc/jdb1Bqsc/DSC-1097.jpg"} height={"100vh"}>
       <Navbar />
 
         <div className="Home-Title">
@@ -93,7 +89,7 @@ function Home() {
         </div>
       </ScrollRevealSection>
 
-      <ScrollRevealSection id={"Section-Page2"} height={"auto"}>
+      {/*<ScrollRevealSection id={"Section-Page2"} height={"auto"}>
         <div className="Main-Cards-Container">
         <h1 className="Key-Offerings">Key Offerings</h1>
 
@@ -142,7 +138,7 @@ function Home() {
       <h1 className="Hardships">Hardships of Farmers :</h1>
         <div>
 
-        <iframe style={{borderRadius:"10px"}} src="https://www.youtube.com/embed/-8zYyujqLJA" frameborder="0" allowfullscreen className="Hardship-Video">
+        <iframe style={{borderRadius:"10px"}} src="https://www.youtube.com/embed/-8zYyujqLJA" frameBorder="0" allowFullScreen className="Hardship-Video">
 </iframe>
 
         </div>
@@ -153,18 +149,49 @@ function Home() {
         <h1  className="GroundReport-Head">Ground Report on Farmers</h1>
         </div>
         
-                <Slider {...settings} style={{width:"100%",alignSelf:"Center"}}>
+               {/* <Slider {...settings} style={{padding:"0px"}}>
       {slides.map((slide, index) => (
-        <div key={index} className="slide-container">
+        <div key={index} className="slide-container" style={{padding:"0px",width:"100%"}} >
           <h2 style={{width:"100%",marginBottom:"20px"}}>{slide.title}</h2>
           <p style={{width:"100%"}} className="Review-Para">{slide.content}</p>
           <h3 style={{marginTop:"20px"}}>-{slide.name}</h3>
         </div>
       ))}
-    </Slider>
+      </Slider> 
+          
+
+   <Carousel className="Carousel">
+                <div >
+                  <h3 style={{margin:"10px"}}>{slides[0].title}</h3>
+                  <p >{slides[0].content}</p>
+                    <p  style={{paddingBottom:"20px",margin:"13px",fontWeight:"bold"}}>-{slides[0].name}</p>
+                </div>
+                <div >
+                  <h3 style={{margin:"10px"}}>{slides[1].title}</h3>
+                  <p >{slides[1].content}</p>
+                  <p  style={{paddingBottom:"20px",margin:"13px",fontWeight:"bold"}}>-{slides[1].name}</p>
+
+                </div>
+                <div >
+                <h3 style={{margin:"10px"}}>{slides[2].title}</h3>
+                  <p >{slides[2].content}</p>
+                  <p  style={{paddingBottom:"20px",margin:"13px",fontWeight:"bold"}}>-{slides[2].name}</p>
+
+                </div>
+                <div >
+                  <h3 style={{margin:"10px"}}>{slides[3].title}</h3>
+                  <p >{slides[3].content}</p>
+                  <p  style={{paddingBottom:"20px",margin:"13px",fontWeight:"bold"}}>-{slides[3].name}</p>
+                </div>
+                <div>
+                <h3 style={{margin:"10px"}}>{slides[4].title}</h3>
+                  <p >{slides[4].content}</p>
+                  <p  style={{paddingBottom:"20px",margin:"13px",fontWeight:"bold"}}>-{slides[4].name}</p>
+                </div>
+            </Carousel>
         
         
-      </ScrollRevealSection>
+      </ScrollRevealSection> */}
       
       <AddressComponent />
     </>
@@ -172,3 +199,6 @@ function Home() {
 }
 
 export default Home;
+
+
+

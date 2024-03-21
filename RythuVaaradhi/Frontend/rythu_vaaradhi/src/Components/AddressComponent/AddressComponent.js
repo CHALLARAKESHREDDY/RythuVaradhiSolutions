@@ -16,12 +16,12 @@ function AddressComponent(){
                  <div className="Home-Bottom-Page">
                         <div id="QuickLinks">
                              <h1>Quick Links</h1>
-                             <p>Drone Spraying</p>
-<p>AI Soil Testing</p>
-<p>Equipment Selling</p>
-<p>Transportation and Storage</p>
-<p>Tractor and Harvestor Rentals</p>
-<p>FPO Model</p>
+                             <p style={{margin:"8px 0px"}}>Drone Spraying</p>
+<p style={{margin:"8px 0px"}}>AI Soil Testing</p>
+<p style={{margin:"8px 0px"}}>Equipment Selling</p>
+<p style={{margin:"8px 0px"}}>Transportation and Storage</p>
+<p style={{margin:"8px 0px"}}>Tractor and Harvestor Rentals</p>
+<p style={{margin:"8px 0px"}}>FPO Model</p>
                         </div>
                         <div className="Address-Card">
                           <h1>Address</h1>
@@ -33,12 +33,12 @@ function AddressComponent(){
                  <div className="Bottom-Socialmedia">
                     <h3 className="Bottom-Rythu">RythuVaaradhiSolutions</h3>
                     <div className="Social-Icons">
-                    <FaWhatsapp />
+                    <a href="https://wa.me/message/J6Y7TZ7LEU3QA1" target="_blank" rel="noopener noreferrer" style={{color:"#ffffff"}}> <FaWhatsapp /></a>
                       <a href="https://www.facebook.com/profile.php?id=61555236356293&mibextid=vk8aRt" target="_blank" rel="noopener noreferrer" style={{color:"#ffffff"}}> <FaFacebookF /></a>
                       <a href="https://www.instagram.com/rythuvaaradhiofficial?igsh=MTdkd2FsdGllMXh2dQ==" target="_blank" rel="noopener noreferrer" style={{color:"#ffffff"}}> <FaInstagram /></a>
                   
                      
-                      <FaYoutube />
+                      <a href="https://youtube.com/@RYTHUVAARADHISOLUTIONS?si=3IwnT7kNbtHOn948" target="_blank" rel="noopener noreferrer" style={{color:"#ffffff"}}><FaYoutube /></a>
                       <a href="https://www.linkedin.com/company/rythuvaaradhisolutions/" target="_blank" rel="noopener noreferrer" style={{color:"#ffffff"}}><FaLinkedinIn /></a>
                     </div>
                  </div>

@@ -32,21 +32,21 @@
 
 }
 .Service-Text{
-    width:40%;
+    width:45%;
     text-align: left;
 
 }
 
 .Service-Text2{
-    width:40%;
+    width:45%;
     text-align: left;
-    margin-left:70px
+    margin-left:100px
 
 }
 
 .Service-Images{
-    height:600px;
-    width:650px;
+    height:550px;
+    width:600px;
     border-radius: 40px;
     margin:60px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -65,7 +65,7 @@
     font-size: 22px;
     font-family:"Roboto";
     line-height: 2;
-    width:500px
+    width:85%;
     
 
 }
@@ -74,13 +74,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    width:100%;
 
 }
 
 .Service-Head{
     font-size: 40px;
     color:#2E8B57;
-    padding-top:80px;
+
 
 
 }
@@ -91,10 +92,28 @@
     margin-bottom: 15px;
 }
 
+@media (max-width:1280px){
+    .Service-Para{
+        font-size: 22px;
+        font-family:"Roboto";
+        line-height: 1.7;
+        width:auto;
+        
+    
+    }
+
+    .Service-Card-Head{
+        color: #2E8B57;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+}
+
 @media (max-width:1024px){
     .service-image{
-        height:500px;
-        width:500px;
+        height:470px;
+        width:470px;
     }
     .Service-Head{
         margin:30px;
@@ -102,16 +121,48 @@
 
     .Service-Images{
         width:45%;
-        height:85%;
+        max-height:75%;
         border-radius: 7px;
         margin:10px;
     }
+
+    .Services-Container{
+        height:100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       
+    
+    }
+
+    .Service-Text2{
+        width:45%;
+        text-align: left;
+        margin-left:25px
+    
+    }
+
+    .Service-Card-Head{
+    color: #2E8B57;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.Service-Para{
+    font-size: 22px;
+    font-family:"Roboto";
+    line-height: 1.5;
+    width:500px
+    
+
+}
 }
 
 @media (max-width:920px){
 
     .Service-Head{
         margin: 0px;
+       
     }
     .service-image{
         height: 400px;
@@ -171,6 +222,7 @@
 
     .Service-Para{
         font-size: 18px;
+        width:auto;
     }
 
     .KnowMore-Button{
@@ -206,7 +258,7 @@
         
     }
     .Service-Head{
-        padding-top: 10px;
+        padding-top: 60px;
         font-size: 27px;
     }
     .Services-Container{
