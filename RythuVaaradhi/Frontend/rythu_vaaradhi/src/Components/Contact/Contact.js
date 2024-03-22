@@ -29,7 +29,7 @@ function Contact(){
 
             <div className="Contact-Container">
             <div className="center-heading"><h1 className="Contact-Head">Contact Us</h1></div>
-                <div className="end-heading" > <h5  style={{fontSize:"17px",color:"#000",width:"auto"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#000"}}/></div>
+                <div className="end-heading" > <h5  style={{fontSize:"17px",color:"#000",width:"auto"}}>Scroll</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#000"}}/></div>
 
           </div>
         </ScrollRevealSection>
@@ -66,7 +66,7 @@ function Contact(){
 
             <div className="Contact-Container">
             <div className="center-heading"><h1 className="Contact-Head" style={{fontSize:"20px"}}>మమ్మల్ని సంప్రదించండి</h1></div>
-                <div className="end-heading"> <h5  style={{fontSize:"17px",color:"#000",width:"auto"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#000"}}/></div>
+                <div className="end-heading"> <h5  style={{fontSize:"17px",color:"#000",width:"auto"}}>Scroll</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#000"}}/></div>
 
           </div>
         </ScrollRevealSection>

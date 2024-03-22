@@ -36,7 +36,7 @@ function About(){
         <Navbar />
             <div className='About-Image'>
             <div className="center-heading"><h1 style={{fontSize:"35px",fontFamily:"Roboto",boxShadow:"0 4px 8px rgba(0, 0, 0, 0.5)"}} className="AboutUs-Head">About Us</h1></div>
-                <div className="end-heading"> <h5  style={{fontSize:"17px",color:"#ffffff"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#ffffff"}}/></div>
+                <div className="end-heading"> <h5  style={{fontSize:"17px",color:"#ffffff"}}>Scroll</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#ffffff"}}/></div>
 
             </div>
         </ScrollRevealSection>
@@ -73,7 +73,7 @@ function About(){
         <Navbar />
             <div className='About-Image'>
                 <div className="center-heading"><h1 style={{fontSize:"30px",fontFamily:"Roboto",boxShadow:"0 4px 8px rgba(0, 0, 0, 0.5)"}} className="AboutUs-Head">మన టీం గురించి</h1></div>
-                <div className="end-heading"> <h5  style={{fontSize:"17px",color:"#ffffff"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#ffffff"}}/></div>
+                <div className="end-heading"> <h5  style={{fontSize:"17px",color:"#ffffff"}}>Scroll</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#ffffff"}}/></div>
 
             </div>
         </ScrollRevealSection>

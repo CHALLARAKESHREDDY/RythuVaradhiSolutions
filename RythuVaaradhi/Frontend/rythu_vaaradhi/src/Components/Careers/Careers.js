@@ -24,7 +24,7 @@ const Careers = () => {
                      <Navbar />
                      <div className="Career-Head">
                      <div className="center-heading"><h1 style={{fontSize:"35px",fontFamily:"Roboto",boxShadow:"0 4px 8px rgba(0, 0, 0, 0.5)",color:"#ffffff"}}>Join Us</h1></div>
-                  <div className="end-heading" style={{paddingBottom:"10px"}}> <h5  style={{fontSize:"17px",color:"#fff"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#fff"}}/></div>
+                  <div className="end-heading" style={{paddingBottom:"10px"}}> <h5  style={{fontSize:"17px",color:"#fff"}}>Scroll</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#fff"}}/></div>
 
                      </div>
                     
@@ -68,7 +68,7 @@ const Careers = () => {
                      <Navbar />
                      <div className="Career-Head">
                      <div className="center-heading"><h1 style={{fontSize:"33px",fontFamily:"Roboto",boxShadow:"0 4px 8px rgba(0, 0, 0, 0.5)",color:"#ffffff"}}>మాతో చేరండి</h1></div>
-                     <div className="end-heading" style={{paddingBottom:"10px"}}> <h5  style={{fontSize:"17px",color:"#fff"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#fff"}}/></div>
+                     <div className="end-heading" style={{paddingBottom:"10px"}}> <h5  style={{fontSize:"17px",color:"#fff"}}>Scroll</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#fff"}}/></div>
 
                      </div>
                     

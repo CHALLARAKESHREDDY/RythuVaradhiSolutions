@@ -33,7 +33,7 @@ function Home() {
                 <div>
                   <h1 className="Home-Quote">'Elevating crops, Empowering farmers'</h1>
                   <h3 className="Home-Quote2">"In the hands of a farmer, every crop is a story of dedication and hard work"</h3>
-                  <div style={{marginTop:"40px"}}> <h5  style={{fontSize:"17px",color:"#ffffff"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#ffffff"}}/></div>
+                  <div style={{marginTop:"40px"}}> <h5  style={{fontSize:"17px",color:"#ffffff"}}>Scroll</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#ffffff"}}/></div>
                 </div>
                
 
@@ -159,7 +159,7 @@ function Home() {
                   <div>
                     <h1 className="Home-Quote">'ఈ యుద్ధం రైతన్న కోసం'</h1>
                     <h3 className="Home-Quote2">"వ్యవసాయం: ప్రతి పంట అంకితభావం మరియు కృషితో రైతు హృదయాన్ని కలుపుతుంది"</h3>
-                    <div style={{marginTop:"40px"}}> <h5  style={{fontSize:"17px",color:"#ffffff"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#ffffff"}}/></div>
+                    <div style={{marginTop:"40px"}}> <h5  style={{fontSize:"17px",color:"#ffffff"}}>Scroll</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#ffffff"}}/></div>
 
                   </div>
 
