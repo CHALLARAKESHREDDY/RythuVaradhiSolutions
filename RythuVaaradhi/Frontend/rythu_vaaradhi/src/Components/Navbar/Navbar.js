@@ -57,7 +57,7 @@ const Navbar = () => {
             </li>
             <li>
               <select value={language} onChange={changeContext}>
-                <option value="Telugu">Telugu</option>
+                <option value="Telugu">తెలుగు</option>
                 <option value="English">English</option>
               </select>
             </li>
@@ -80,23 +80,23 @@ const Navbar = () => {
           <div className={`nav-elements  ${showNavbar && 'active'}`}>
             <ul>
               <li>
-                <NavLink to="/" exact>Home</NavLink>
+                <NavLink to="/" exact>హోమ్</NavLink>
               </li>
               <li>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/about">అబౌట్</NavLink>
               </li>
               <li>
-                <NavLink to="/services">Services</NavLink>
+                <NavLink to="/services">సర్వీసెస్</NavLink>
               </li>
               <li>
-                <NavLink to="/careers">Careers</NavLink>
+                <NavLink to="/careers">కెరీర్స్</NavLink>
               </li>
               <li>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/contact">కాంటాక్ట్</NavLink>
               </li>
               <li>
                 <select value={language} onChange={changeContext}>
-                  <option value="Telugu">Telugu</option>
+                  <option value="Telugu">తెలుగు</option>
                   <option value="English">English</option>
                 </select>
               </li>
