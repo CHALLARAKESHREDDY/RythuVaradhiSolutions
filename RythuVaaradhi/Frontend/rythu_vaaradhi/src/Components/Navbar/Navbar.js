@@ -1,13 +1,25 @@
-import { useState,useContext} from 'react'
+import { useState,useContext, useEffect} from 'react'
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { FaArrowRight } from "react-icons/fa6";
+
 import './Navbar.css'
 import MyContext from '../Context/Context';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
   const {language, changeLanguage}=useContext(MyContext)
+  const [color,setColor]=useState("#fff")
+
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setColor(prevColor => prevColor === "#fff" ? "#000" : "#fff");
+    }, 500);
+
+    return () => clearInterval(intervalId); // Cleanup function to clear interval
+  }, [])
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar)
@@ -36,6 +48,7 @@ const Navbar = () => {
           <h1 style={{color:"#145A32"}}>RythuVaaradhi</h1>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
+        <FaArrowRight style={{color:color}}/>
         <IoMenu className="IoMenu" />
         </div>
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
@@ -74,7 +87,9 @@ const Navbar = () => {
           <div className="logo">
             <h1 style={{color:"#145A32"}}>రైతు వారధి</h1>
           </div>
+          
           <div className="menu-icon" onClick={handleShowNavbar}>
+          <FaArrowRight style={{color:color}}/>
           <IoMenu className="IoMenu" />
           </div>
           <div className={`nav-elements  ${showNavbar && 'active'}`}>
@@ -114,7 +129,9 @@ const Navbar = () => {
             <div className="logo">
               <h1 style={{color:"#145A32"}}>RythuVaaradhi</h1>
             </div>
+          
             <div className="menu-icon" onClick={handleShowNavbar}>
+            <FaArrowRight style={{color:color}}/>
             <IoMenu className="IoMenu" />
             </div>
             <div className={`nav-elements  ${showNavbar && 'active'}`}>

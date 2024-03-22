@@ -1,11 +1,20 @@
 .About-Image{
     height:80vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     color:#ffffff;
   
     
+}
+
+.end-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align at the end of the container */
+  align-items: center; /* Center horizontally */
+  padding-bottom: 40px;
 }
 
 *{
@@ -124,6 +133,14 @@
 
   .CoreValues{
     padding:30px;
+  }
+
+  .center-heading {
+    display: flex;
+    height:80vh;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
   }
 
 

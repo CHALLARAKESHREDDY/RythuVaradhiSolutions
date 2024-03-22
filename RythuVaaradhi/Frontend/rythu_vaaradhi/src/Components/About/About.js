@@ -11,7 +11,12 @@ import Card from "../Card-Box-Component/Card";
 import Navbar from "../Navbar/Navbar";
 import AddressComponent from "../AddressComponent/AddressComponent";
 import MyContext from '../Context/Context';
+import { FaRegArrowAltCircleDown } from "react-icons/fa";
 
+let paraE4="Rythu Vaaradhi Solutions recognizes its role in the broader community. The startup is dedicated to making a positive impact by supporting local farmers, creating job opportunities, and contributing to economic growth. By prioritizing community welfare, the company aims to be a catalyst for positive change in the regions it operates."
+let paraE3="At the heart of Rythu Vaaradhi is the commitment to empower and educate farmers. Through access to skilled labor, modern machinery, and advanced agricultural practices like precision farming, the startup aims to uplift farmers, enhance their capabilities, and contribute to their economic well-being through sustainable practices."
+let paraE2="Recognizing the strength in unity, Rythu Vaaradhi Solutions promotes collaboration among farmers. By creating a community-driven platform, the startup facilitates the sharing of resources, knowledge, and experiences. This collaborative approach not only improves individual farm operations but also strengthens the agricultural community as a whole."
+let paraE1="Rythu Vaaradhi Solutions is committed to staying at the forefront of technological advancements in agriculture. By constantly seeking and implementing innovative solutions, the company aims to enhance farming practices, optimize resource usage, and contribute to the overall modernization of the agricultural sector."
 let para1="రైతు వారధి సొల్యూషన్స్ వ్యవసాయంలో సాంకేతిక పురోగతిలో ముందంజలో ఉండటానికి కట్టుబడి ఉంది. వినూత్న పరిష్కారాలను నిరంతరం వెతకడం మరియు అమలు చేయడం ద్వారా, కంపెనీ వ్యవసాయ పద్ధతులను మెరుగుపరచడం, వనరుల వినియోగాన్ని ఆప్టిమైజ్ చేయడం మరియు వ్యవసాయ రంగం యొక్క మొత్తం ఆధునికీకరణకు దోహదం చేయడం లక్ష్యంగా పెట్టుకుంది."
 let para4="రైతు వారధి సొల్యూషన్స్ విస్తృత సమాజంలో తన పాత్రను గుర్తిస్తుంది. స్థానిక రైతులకు మద్దతు ఇవ్వడం, ఉద్యోగ అవకాశాలను సృష్టించడం మరియు ఆర్థిక వృద్ధికి దోహదపడటం ద్వారా సానుకూల ప్రభావాన్ని చూపడానికి అంకితం చేయబడింది. కమ్యూనిటీ సంక్షేమానికి ప్రాధాన్యత ఇవ్వడం ద్వారా, కంపెనీ ఆపరేట్ చేసే ప్రాంతాల్లో సానుకూల మార్పు కోసం ఉత్ప్రేరకంగా ఉండాలనే లక్ష్యంతో ఉంది."
 let para2="ఐక్యతలోని బలాన్ని గుర్తిస్తూ, రైతు వారధి సొల్యూషన్స్ రైతుల మధ్య సహకారాన్ని ప్రోత్సహిస్తుంది. కమ్యూనిటీ-ఆధారిత ప్లాట్‌ఫారమ్‌ను సృష్టించడం ద్వారా, స్టార్టప్ వనరులు, జ్ఞానం మరియు అనుభవాలను పంచుకోవడానికి వీలు కల్పిస్తుంది. ఈ సహకార విధానం వ్యక్తిగత వ్యవసాయ కార్యకలాపాలను మెరుగుపరచడమే కాకుండా మొత్తం వ్యవసాయ సమాజాన్ని బలోపేతం చేస్తుంది."
@@ -27,10 +32,12 @@ function About(){
                     case "English":
                         return(
                             <>
-        <ScrollRevealSection id={"about1"} url={"https://i.postimg.cc/59FzShj1/DSC-0982-01.jpg"} height={"105vh"} >
+        <ScrollRevealSection id={"about1"} url={"https://i.postimg.cc/59FzShj1/DSC-0982-01.jpg"} height={"100vh"} >
         <Navbar />
             <div className='About-Image'>
-                <h1 style={{fontSize:"50px",fontFamily:"Roboto",boxShadow:"0 4px 8px rgba(0, 0, 0, 0.5)"}} className="AboutUs-Head">About Us</h1>
+            <div className="center-heading"><h1 style={{fontSize:"35px",fontFamily:"Roboto",boxShadow:"0 4px 8px rgba(0, 0, 0, 0.5)"}} className="AboutUs-Head">About Us</h1></div>
+                <div className="end-heading"> <h5  style={{fontSize:"17px",color:"#ffffff"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#ffffff"}}/></div>
+
             </div>
         </ScrollRevealSection>
         <ScrollRevealSection id={"about2"} height={"auto"} backgroundColor={"#E9F9EE"}>
@@ -46,10 +53,10 @@ function About(){
 
        <div className="Cards-Container">
         
-       <Card para={para1} icon={FcIdea} title={"Innovation"} className="para1"/>
-            <Card para={para2} icon={FcCollaboration} title={"Collaboration"}/>
-            <Card para={para3} icon={GiWaterRecycling} title={"Sustainability"}/>
-            <Card para={para4} icon={LiaFistRaisedSolid} title={"Community Impact"} />
+       <Card para={paraE1} icon={FcIdea} title={"Innovation"} className="para1"/>
+            <Card para={paraE2} icon={FcCollaboration} title={"Collaboration"}/>
+            <Card para={paraE3} icon={GiWaterRecycling} title={"Sustainability"}/>
+            <Card para={paraE4} icon={LiaFistRaisedSolid} title={"Community Impact"} />
        </div>
        </div>
             
@@ -62,10 +69,12 @@ function About(){
                         case "Telugu":
                             return(
                                 <>
-        <ScrollRevealSection id={"about1"} url={"https://i.postimg.cc/59FzShj1/DSC-0982-01.jpg"} height={"105vh"} >
+        <ScrollRevealSection id={"about1"} url={"https://i.postimg.cc/59FzShj1/DSC-0982-01.jpg"} height={"100vh"} >
         <Navbar />
             <div className='About-Image'>
-                <h1 style={{fontSize:"50px",fontFamily:"Roboto",boxShadow:"0 4px 8px rgba(0, 0, 0, 0.5)"}} className="AboutUs-Head">మన టీం గురించి</h1>
+                <div className="center-heading"><h1 style={{fontSize:"30px",fontFamily:"Roboto",boxShadow:"0 4px 8px rgba(0, 0, 0, 0.5)"}} className="AboutUs-Head">మన టీం గురించి</h1></div>
+                <div className="end-heading"> <h5  style={{fontSize:"17px",color:"#ffffff"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#ffffff"}}/></div>
+
             </div>
         </ScrollRevealSection>
         <ScrollRevealSection id={"about2"} height={"auto"} backgroundColor={"#E9F9EE"}>
