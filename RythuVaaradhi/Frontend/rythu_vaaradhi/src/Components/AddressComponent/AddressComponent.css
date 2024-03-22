@@ -18,10 +18,11 @@
     }
 
     .Address-Card{
-        margin-left:30px;
+        
+        padding-left: 55px;
     }
 
     .Bottom-Rythu{
-        font-size: 15px;
+        font-size: 14px;
     }
 }

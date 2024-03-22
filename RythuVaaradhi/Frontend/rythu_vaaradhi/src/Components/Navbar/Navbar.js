@@ -24,9 +24,13 @@ const Navbar = () => {
   }
 
 
-
-  return (
-    <nav className="navbar">
+  return(
+    <MyContext.Consumer>
+      {(context)=>{
+        switch (context.language){
+              case "English":
+                return (
+                  <nav className="navbar">
       <div className="container">
         <div className="logo">
           <h1 style={{color:"#145A32"}}>RythuVaaradhi</h1>
@@ -62,6 +66,94 @@ const Navbar = () => {
       </div>
     </nav>
   )
+  break ;
+  case "Telugu" :
+       return(
+        <nav className="navbar">
+        <div className="container">
+          <div className="logo">
+            <h1 style={{color:"#145A32"}}>రైతు వారధి</h1>
+          </div>
+          <div className="menu-icon" onClick={handleShowNavbar}>
+          <IoMenu className="IoMenu" />
+          </div>
+          <div className={`nav-elements  ${showNavbar && 'active'}`}>
+            <ul>
+              <li>
+                <NavLink to="/" exact>Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about">About</NavLink>
+              </li>
+              <li>
+                <NavLink to="/services">Services</NavLink>
+              </li>
+              <li>
+                <NavLink to="/careers">Careers</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact">Contact</NavLink>
+              </li>
+              <li>
+                <select value={language} onChange={changeContext}>
+                  <option value="Telugu">Telugu</option>
+                  <option value="English">English</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+       )
+       break;
+       default :
+         return(
+          <nav className="navbar">
+          <div className="container">
+            <div className="logo">
+              <h1 style={{color:"#145A32"}}>RythuVaaradhi</h1>
+            </div>
+            <div className="menu-icon" onClick={handleShowNavbar}>
+            <IoMenu className="IoMenu" />
+            </div>
+            <div className={`nav-elements  ${showNavbar && 'active'}`}>
+              <ul>
+                <li>
+                  <NavLink to="/" exact>Home</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/about">About</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/services">Services</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/careers">Careers</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/contact">Contact</NavLink>
+                </li>
+                <li>
+                  <select value={language} onChange={changeContext}>
+                    <option value="Telugu">Telugu</option>
+                    <option value="English">English</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      )
+         
+                
+        }
+      }}
+    </MyContext.Consumer>
+  )
+
+
+
 }
 
 export default Navbar

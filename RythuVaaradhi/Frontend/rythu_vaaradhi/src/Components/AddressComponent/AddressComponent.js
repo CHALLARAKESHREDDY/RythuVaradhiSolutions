@@ -32,7 +32,7 @@ function AddressComponent(){
                  </div>
                  <div className="Bottom-Socialmedia">
                     <h3 className="Bottom-Rythu">RythuVaaradhiSolutions</h3>
-                    <div className="Social-Icons">
+                    <div className="Social-Icons" style={{width:"40%"}}>
                     <a href="https://wa.me/message/J6Y7TZ7LEU3QA1" target="_blank" rel="noopener noreferrer" style={{color:"#ffffff"}}> <FaWhatsapp /></a>
                       <a href="https://www.facebook.com/profile.php?id=61555236356293&mibextid=vk8aRt" target="_blank" rel="noopener noreferrer" style={{color:"#ffffff"}}> <FaFacebookF /></a>
                       <a href="https://www.instagram.com/rythuvaaradhiofficial?igsh=MTdkd2FsdGllMXh2dQ==" target="_blank" rel="noopener noreferrer" style={{color:"#ffffff"}}> <FaInstagram /></a>

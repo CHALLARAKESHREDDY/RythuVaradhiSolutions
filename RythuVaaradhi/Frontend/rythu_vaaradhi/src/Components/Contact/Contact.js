@@ -10,40 +10,8 @@ import AddressComponent from '../AddressComponent/AddressComponent';
 
 function Contact(){
 
-    const [formData, setFormData] = useState({
-        fullName: '',
-        email: '',
-        phoneNumber: '',
-        message: ''
-      });
+   
     
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-          ...formData,
-          [name]: value
-        });
-      };
-    
-      const handleSubmit = async(e) => {
-        e.preventDefault();
-      try{
-        const response = await Axios.post("http://localhost:3007/message", formData)
-        
-         setFormData({
-          fullName: '',
-          email: '',
-          phoneNumber: '',
-          message: ''
-        })
-
-         window.alert(response.data)
-
-      }catch(e){
-             window.alert(e.message)
-      }
-        
-      };
     return(
         <>
         <ScrollRevealSection id={"Contact1"} height={"100vh"} url={"https://i.postimg.cc/LsSjYWZz/1000248684-01.jpg"} >
