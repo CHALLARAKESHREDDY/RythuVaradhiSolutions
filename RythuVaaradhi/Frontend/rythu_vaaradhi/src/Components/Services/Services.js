@@ -25,7 +25,7 @@ function Services(){
                                 <div className="Service-Image-Container" >
                                     <img src="https://i.postimg.cc/V6zVj07m/Picsart-24-01-02-13-45-58-095.png" alt="service-image" className="service-image" />
                                     <h1 className="Service-Head">Services</h1>
-                                    <div style={{marginTop:"40px"}}> <h5  style={{fontSize:"17px",color:"#000"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#000"}}/></div>
+                                    <div style={{marginTop:"40px"}}> <h5  style={{fontSize:"17px",color:"#000"}}>Scroll</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#000"}}/></div>
 
                                       
                                 </div>
@@ -128,7 +128,7 @@ function Services(){
                                     <div className="Service-Image-Container" >
                                         <img src="https://i.postimg.cc/V6zVj07m/Picsart-24-01-02-13-45-58-095.png" alt="service-image" className="service-image" />
                                         <h1 className="Service-Head">సేవలు</h1>
-                                        <div style={{marginTop:"40px"}}> <h5  style={{fontSize:"17px",color:"#000"}}>Swipe</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#000"}}/></div>
+                                        <div style={{marginTop:"40px"}}> <h5  style={{fontSize:"17px",color:"#000"}}>Scroll</h5><FaRegArrowAltCircleDown style={{fontSize:"20px",color:"#000"}}/></div>
 
                                           
                                     </div>

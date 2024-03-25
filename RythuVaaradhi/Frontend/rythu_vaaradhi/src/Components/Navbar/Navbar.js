@@ -44,8 +44,8 @@ const Navbar = () => {
                 return (
                   <nav className="navbar">
       <div className="container">
-        <div className="logo">
-          <h1 style={{color:"#145A32"}}>RythuVaaradhi</h1>
+        <div >
+          <h1 style={{color:"#145A32"}} className="logo">RythuVaaradhi</h1>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
         <FaArrowRight style={{color:color}}/>
@@ -85,7 +85,7 @@ const Navbar = () => {
         <nav className="navbar">
         <div className="container">
           <div className="logo">
-            <h1 style={{color:"#145A32"}}>రైతు వారధి</h1>
+            <h1 style={{color:"#145A32",fontSize:"20px"}}>రైతు వారధి</h1>
           </div>
           
           <div className="menu-icon" onClick={handleShowNavbar}>

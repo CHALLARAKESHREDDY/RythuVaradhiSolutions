@@ -90,10 +90,10 @@ function About(){
 
        <div className="Cards-Container">
         
-       <Card para={para1} icon={FcIdea} title={"Innovation"} className="para1"/>
-            <Card para={para2} icon={FcCollaboration} title={"Collaboration"}/>
-            <Card para={para3} icon={GiWaterRecycling} title={"Sustainability"}/>
-            <Card para={para4} icon={LiaFistRaisedSolid} title={"Community Impact"} />
+       <Card para={para1} icon={FcIdea} title={"నవకల్పన"} className="para1"/>
+            <Card para={para2} icon={FcCollaboration} title={"సహకారం"}/>
+            <Card para={para3} icon={GiWaterRecycling} title={"సుస్థిరత"}/>
+            <Card para={para4} icon={LiaFistRaisedSolid} title={"కమ్యూనిటీ ప్రభావం"} />
        </div>
        </div>
             
